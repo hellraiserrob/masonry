@@ -1,114 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masonry</title>
 
-    <!-- <link rel="stylesheet" href="main.css"> -->
-  </head>
-  <body>
-    <div id="app">
-      <div id="main">
-        <!-- <h1>Masonry</h1>
-        <h2>Layout library</h2> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masonry</title>
 
-        <div class="masonry">
-          <div class="masonry__results">
-            <div class="card">  
+  <script type="module" src="/src/index.ts" defer></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="main">
+      <div class="text-center p50">
+        <img src="/images/logo.png" alt="">
+        <h1>Masonry</h1>
+        <!-- <h2>Layout library</h2> -->
+      </div>
+
+      <div class="masonry">
+        <div class="masonry__results">
+          <div class="card">
+            <div class="card__style">
               <div class="card__title">
                 <h2>Title goes here</h2>
                 <h3>Summary text</h3>
               </div>
-              <div class="card__image"></div>
+              <div class="card__image">
+                <img src="/images/1.jpg" alt="">
+              </div>
               <div class="card__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               </div>
               <div class="card__actions">
-                <button>Action 1</button>
-                <button>Action 2</button>
+                <button>Add</button>
+                <button>Remove</button>
               </div>
-            </div><!-- /card -->
-            
-            <div class="card">  
-              <div class="card__title">
-                <h2>A title </h2>
-                <h3>Summary </h3>
-              </div>
-              <div class="card__image card__image--large"></div>
-              <div class="card__text">
-                Lorem ipsum dolor, consectetuer adipiscing elit.
-              </div>
-              <div class="card__actions">
-                <button>Action 1</button>
-                <!-- <button>Action 2</button> -->
-              </div>
-            </div><!-- /card -->
-            <div class="card">  
-              <div class="card__title">
-                <h2>Title goes here</h2>
-                <h3>Summary text</h3>
-              </div>
-              <div class="card__image"></div>
-              <div class="card__text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              </div>
-              <div class="card__actions">
-                <button>Action 1</button>
-                <button>Action 2</button>
-              </div>
-            </div><!-- /card -->
-            
-            <div class="card">  
-              <div class="card__title">
-                <h2>A title </h2>
-                <h3>Summary </h3>
-              </div>
-              <div class="card__image card__image--large"></div>
-              <div class="card__text">
-                Lorem ipsum dolor, consectetuer adipiscing elit.
-              </div>
-              <div class="card__actions">
-                <button>Action 1</button>
-                <!-- <button>Action 2</button> -->
-              </div>
-            </div><!-- /card --><div class="card">  
-              <div class="card__title">
-                <h2>Title goes here</h2>
-                <h3>Summary text</h3>
-              </div>
-              <div class="card__image"></div>
-              <div class="card__text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              </div>
-              <div class="card__actions">
-                <button>Action 1</button>
-                <button>Action 2</button>
-              </div>
-            </div><!-- /card -->
-            
-            <div class="card">  
-              <div class="card__title">
-                <h2>A title </h2>
-                <h3>Summary </h3>
-              </div>
-              <div class="card__image card__image--large"></div>
-              <div class="card__text">
-                Lorem ipsum dolor, consectetuer adipiscing elit.
-              </div>
-              <div class="card__actions">
-                <button>Action 1</button>
-                <!-- <button>Action 2</button> -->
-              </div>
-            </div><!-- /card -->
-          </div>
+            </div>
 
-          <div class="text-center">
-            <button class="button">Load more</button>
-          </div>
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>A title </h2>
+                <h3>Summary </h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/3.jpg" alt="" style="aspect-ratio: 3/4">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+              </div>
+            </div>
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>Title goes here</h2>
+                <h3>Summary text</h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/2.jpg" alt="" style="aspect-ratio: 1/1">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+                <button>Remove</button>
+              </div>
+            </div>
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>Title goes here</h2>
+                <h3>Summary text</h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/1.jpg" alt="">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+                <button>Remove</button>
+              </div>
+            </div>
+
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>A title </h2>
+                <h3>Summary </h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/2.jpg" alt="" style="aspect-ratio: 1/1">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+              </div>
+            </div>
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>Title goes here</h2>
+                <h3>Summary text</h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/3.jpg" alt="" style="aspect-ratio: 3/4">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+                <button>Remove</button>
+              </div>
+            </div>
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>Title goes here</h2>
+                <h3>Summary text</h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/1.jpg" alt="">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+                <button>Remove</button>
+              </div>
+            </div>
+
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>A title </h2>
+                <h3>Summary </h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/2.jpg" alt="" style="aspect-ratio: 1/1">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+              </div>
+            </div>
+          </div><!-- /card -->
+
+          <div class="card">
+            <div class="card__style">
+              <div class="card__title">
+                <h2>Title goes here</h2>
+                <h3>Summary text</h3>
+              </div>
+              <div class="card__image">
+                <img src="/images/3.jpg" alt="" style="aspect-ratio: 3/4">
+              </div>
+              <div class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+              <div class="card__actions">
+                <button>Add</button>
+                <button>Remove</button>
+              </div>
+            </div>
+          </div><!-- /card -->
+
+        </div><!-- / results-->
+
+        <div class="text-center p50">
+          <button class="button load">Load more</button>
         </div>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  </div>
+</body>
+
 </html>
