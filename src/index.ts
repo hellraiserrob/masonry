@@ -81,7 +81,9 @@ function bindings() {
 }
 
 function handeLoadMoreClick() {
-  fetch("/api/news.json", {})
+  const url = "/masonry/api/news.json";
+
+  fetch(url, {})
     .then(response => {
       if (response.status > 200) {
         throw Error();
