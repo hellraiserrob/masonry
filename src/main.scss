@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 30px;
   line-height: 35px;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 4px;
 }
 
@@ -42,9 +42,29 @@ h3 {
   font-size: 14px;
 }
 
+a {
+  color: blue;
+
+  &:focus {
+    outline: black 2px solid;
+  }
+}
+
 #main {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: relative;
+  padding-left: 70px;
+
+  img {
+    position: absolute;
+    top: 12px;
+    left: 0;
+  }
 }
 
 .text-center {
@@ -59,6 +79,9 @@ h3 {
   padding: 50px;
 }
 
+.mb10 {
+  margin-bottom: 10px;
+}
 .mb50 {
   margin-bottom: 50px;
 }
@@ -66,7 +89,7 @@ h3 {
 .masonry {
   &__results {
     position: relative;
-    margin: 0 -8px;
+    margin: 0 -16px;
     transition: height ease 0.5s;
   }
 }
@@ -75,7 +98,7 @@ h3 {
   position: absolute;
   opacity: 0;
   transition: opacity ease 0.6s;
-  padding: 0 8px;
+  padding: 0 16px;
 
   &--active {
     opacity: 1;
@@ -83,13 +106,14 @@ h3 {
 
   &__style {
     background: #efefef;
-    border-radius: 2px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   &__title {
-    padding: 12px;
+    padding: 16px;
   }
 
   &__image {
@@ -100,13 +124,14 @@ h3 {
   }
 
   &__text {
-    padding: 12px;
-    font-size: 15px;
+    padding: 16px;
+    font-size: 14px;
+    font-style: italic;
   }
 
   &__actions {
     margin-top: auto;
-    padding: 0 12px 12px 12px;
+    padding: 0 16px 16px 16px;
 
     button {
       padding: 2px 5px;
@@ -125,7 +150,7 @@ h3 {
       }
 
       &:focus {
-        outline: red 2px solid;
+        outline: black 2px solid;
       }
 
       & + & {
@@ -136,20 +161,22 @@ h3 {
 }
 
 .button {
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  padding: 5px 20px;
+  border: 0;
+  border-radius: 25px;
+  padding: 10px 30px;
   font-size: 18px;
   background: transparent;
-  font-weight: 500;
+  // font-weight: 500;
   cursor: pointer;
-  transition: border ease 0.2s;
+  transition: background ease 0.2s;
+  // font-style: italic;
+  background-color: #efefef;
 
   &:hover {
-    border-color: #ccc;
+    background-color: #ddd;
   }
 
   &:focus {
-    outline: red 2px solid;
+    outline: blue 2px solid;
   }
 }

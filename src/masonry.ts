@@ -103,9 +103,11 @@ function layout() {
         el.classList.add(css.cardActive);
         const inView = new InView();
 
-        inView.bindScroll(el, () => {
-          el.classList.add(css.cardActive);
-        });
+        window.setTimeout(() => {
+          inView.bindScroll(el, () => {
+            el.classList.add(css.cardActive);
+          });
+        }, 0)
       }
     }
   });

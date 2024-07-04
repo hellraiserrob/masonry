@@ -18,7 +18,7 @@ const options = [
         y: 0
       }
     ],
-    gutter: 16,
+    gutter: 32,
   },
   {
     threshold: 600,
@@ -40,7 +40,7 @@ const options = [
         y: 0
       }
     ],
-    gutter: 16,
+    gutter: 32,
   },
   {
     threshold: 1000,
@@ -67,7 +67,7 @@ const options = [
         y: 0
       }
     ],
-    gutter: 16,
+    gutter: 32,
   }
 ];
 
