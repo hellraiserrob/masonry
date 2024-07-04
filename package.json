@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "vite.config.js",
+  "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
