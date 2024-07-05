@@ -10,7 +10,7 @@ An example of a beautiful Pinterest style layout library, available for you to t
 
 - Vanilla Typescript
 - Light & Responsive
-- Use as you wish
+- Use in your projects or as learning material
 
 ## Setup
 
