@@ -1,75 +1,33 @@
 import { setup, add } from "./masonry"
 import { cardTemplate } from "./templates";
+import { Breakpoint } from "./interfaces";
 
 const css = {
   load: "load"
 };
 
-const loadBtn: (HTMLElement | null) = document.querySelector(`.${css.load}`);
-
-const options = [
+const loadBtn = document.querySelector<HTMLElement>(`.${css.load}`);
+const options:Breakpoint[] = [
   {
     threshold: 0,
-    width: "100%",
-    cols: [
-      {
-        id: 1,
-        x: 0,
-        y: 0
-      }
-    ],
+    columns: 1,
     gutter: 32,
   },
   {
     threshold: 600,
-    width: "33.33%",
-    cols: [
-      {
-        id: 1,
-        x: 0,
-        y: 0
-      },
-      {
-        id: 2,
-        x: "33.33%",
-        y: 0
-      },
-      {
-        id: 3,
-        x: "66.66%",
-        y: 0
-      }
-    ],
+    columns: 3,
     gutter: 32,
   },
   {
     threshold: 1000,
-    width: "25%",
-    cols: [
-      {
-        id: 1,
-        x: 0,
-        y: 0
-      },
-      {
-        id: 2,
-        x: "25%",
-        y: 0
-      },
-      {
-        id: 3,
-        x: "50%",
-        y: 0
-      },
-      {
-        id: 4,
-        x: "75%",
-        y: 0
-      }
-    ],
+    columns: 4,
     gutter: 32,
   }
 ];
+
+/**
+ * dummy code showing how to load more items into the masonry grid
+ */
 
 function resizeHandler() {
   setup(options);

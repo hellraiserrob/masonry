@@ -15,3 +15,9 @@ export interface Column {
   x: number,
   y: number,
 }
+
+export interface Breakpoint {
+  threshold: number,
+  columns: number,
+  gutter: number,
+}

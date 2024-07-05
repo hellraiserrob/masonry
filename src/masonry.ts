@@ -1,7 +1,7 @@
 import "./main.scss";
 import InView from "./in-view";
 import { getViewportWidth } from "./utils";
-import { Column } from "./interfaces"; 
+import { Column } from "./interfaces";
 
 const css = {
   results: "masonry__results",
@@ -12,17 +12,22 @@ const css = {
 let results: (HTMLElement | null) = document.querySelector(`.${css.results}`);
 let cards = document.querySelectorAll(`.${css.card}`);
 
-let cols:Column[] = [];
+let cols: Column[] = [];
 let gutter = 0;
 let width = 0;
 
-function reset() {
-  cols.forEach(col => {
-    col.y = 0;
-  });
+function reset(columns, width) {
+  cols = [];
+
+  for (let i = 0; i < columns; i += 1) {
+    cols.push({
+      id: i + 1,
+      x: i * width,
+      y: 0
+    })
+  }
 
   cards = document.querySelectorAll(`.${css.card}`);
-
   cards.forEach(el => {
     el.classList.remove(css.cardActive);
   });
@@ -30,7 +35,7 @@ function reset() {
 
 // find the column to slot into
 function nextColumn() {
-  let next:(null|Column) = null;
+  let next: (null | Column) = null;
 
   cols.forEach(col => {
     if (!next) {
@@ -80,15 +85,15 @@ function layout() {
 
   tiles.forEach(el => {
     if (!el.classList.contains(css.cardActive)) {
-      const next:any = nextColumn();
+      const next: any = nextColumn();
 
-      if(next) {
+      if (next) {
         const left = next.x;
         const top = next.y > 0 ? next.y + gutter : 0;
 
         setStyles(el, {
-          width,
-          left,
+          width: `${width}%`,
+          left: `${left}%`,
           top: `${top}px`
         });
 
@@ -116,15 +121,17 @@ function layout() {
 }
 
 export function setup(options) {
+  let columns: number = 0;
+
   options.forEach(breakpoint => {
     if (getViewportWidth() > breakpoint.threshold) {
-      cols = breakpoint.cols
-      width = breakpoint.width
+      columns = breakpoint.columns
+      width = 100 / columns
       gutter = breakpoint.gutter
     }
   });
 
-  reset();
+  reset(columns, width);
   layout();
 }
 
