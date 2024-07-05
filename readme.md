@@ -1,4 +1,5 @@
 [![Masonry banner](./.github/assets/banner.svg)](https://hellraiserrob.github.io/masonry)
+[![Masonry screenshot](./.github/assets/screenshot.jpg)](https://hellraiserrob.github.io/masonry)
 
 # Masonry
 
