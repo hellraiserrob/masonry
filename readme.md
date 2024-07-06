@@ -1,11 +1,12 @@
 [![Masonry banner](./.github/assets/banner.svg)](https://hellraiserrob.github.io/masonry)
-[![Masonry screenshot](./.github/assets/screenshot.jpg)](https://hellraiserrob.github.io/masonry)
 
 # Masonry
 
 An example of a beautiful Pinterest style layout library, available for you to take and use as you wish in your projects.
 
 [Demo](https://hellraiserrob.github.io/masonry/)
+
+[![Masonry screenshot](./.github/assets/screenshot.jpg)](https://hellraiserrob.github.io/masonry)
 
 ## Features
 
